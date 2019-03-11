@@ -66,11 +66,44 @@ table {
           box-sizing: border-box;
 }
 
-.container {
+.container,
+.grid {
   margin: 0 auto;
+  width: 960px;
+}
+.containter {
   padding-left: 30px;
   padding-right: 30px;
-  width: 960px;
+}
+
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-3,
+.col-2-3 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*
+    ===========================================
+    Clearfix 
+    ===========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
 }
 
 /*
@@ -88,5 +121,12 @@ h1, h3, h4, h5, h6, p {
     ===========================================
 */
 .hero {
-  padding: 66px 80px 22px 80px;
+  padding: 66px 0px 22px 0px;
+}
+.hero img{
+  background: #eaeaed;
+  border: 1px solid #9799a7;
+  float: right;
+  margin: 8px 0 0 20px;
+  padding: 4px;
 }
