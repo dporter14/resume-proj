@@ -52,6 +52,10 @@ table {
     CUSTOM STYLES
     ===========================================
 */
+body {
+  color: #000;
+  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 /*
     ===========================================
@@ -114,6 +118,60 @@ table {
 h1, h3, h4, h5, h6, p {
   margin-bottom: 22px;
 }
+h1, h2, h3, h4 {
+  color: #888;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #bbb;
+  font-size: 14px;
+  font-weight: 400;
+}
+strong {
+  font-weight: 400;
+}
+cite, em{
+  font-style: italic;
+}
+
+/*
+    ===========================================
+    Links 
+    ===========================================
+*/
+a:hover {
+  color: #bbb;
+}
+a {
+  color: #888;
+}
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*
+    ===========================================
+    Header
+    ===========================================
+*/
+.primary-head {
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
 
 /*
     ===========================================
@@ -121,7 +179,7 @@ h1, h3, h4, h5, h6, p {
     ===========================================
 */
 .hero {
-  padding: 66px 0px 22px 0px;
+  padding: 50px 0px 20px 0px;
 }
 .hero img{
   background: #eaeaed;
@@ -129,4 +187,20 @@ h1, h3, h4, h5, h6, p {
   float: right;
   margin: 8px 0 0 20px;
   padding: 4px;
+}
+
+/*
+    ===========================================
+    Footer 
+    ===========================================
+*/
+.primary-footer {
+  color: #888;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+.primary-footer small{
+  float: left;
+  font-weight: 400;
 }
